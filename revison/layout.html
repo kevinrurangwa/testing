@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+.menu{
+        background-color: black;
+        padding: 10px;
+ 
+ text-align: right;
+    }
+    .menu ul li{
+        list-style:none;
+        display: inline;
+        padding-right:10px;
+        
+        
+    }
+    a{
+        
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    a:hover{
+        background-color: cyan;
+        color:red;
+    }
+
+        .parent{
+            display: flex;
+            gap:10px;
+            justify-content: space-around;
+
+        }
+        .child{
+            width: 300px;
+            height: 300px;
+            background-color: blueviolet;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#">images</a></li>
+            <li><a href="#">videos</a></li>
+            <li><a href="#">list</a></li>
+            <li><a href="#">forms</a></li>
+        </ul>
+    </div>
+    
+
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+
+    </div>
+    
+</body>
+</html>
